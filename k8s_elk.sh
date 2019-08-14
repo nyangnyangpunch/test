@@ -1,10 +1,8 @@
 #!/bin/bash
 
 # Install java
-apt-get update && apt-get upgrade
-apt-get install -y software-properties-common
-add-apt-repository ppa:webupd8team/java
-apt-get install -y oracle-java8-installer
+yum -y update
+yum install -y java-1.8.0-openjdk java-1.8.0-openjdk-devel
 echo `java -version`
 
 
